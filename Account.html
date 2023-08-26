@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../E-Coomerce_Website_CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,200;1,400;1,500&display=swap" rel="stylesheet">
+
+    <title>All Products eCommerce Website | Kashif Khan</title>
+</head>
+<body>
+    <div class="container">
+            <div class="Nav_bar">
+                <div class="logo_img">
+                    <a href="../E-Coomerce_Website_HTML/index.html"> 
+                        <img src="../E-Coomerce_Website_Images/logo.png"  width="140px" alt="">
+                    </a>
+                </div>
+                <nav id="nav_links">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../E-Coomerce_Website_HTML/index.html">HOME</a></li>
+                        <li><a href="../E-Coomerce_Website_HTML/Products.html">PRODUCTS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="../E-Coomerce_Website_HTML/Contact.html">CONTACT</a></li>
+                        <li><a href="../E-Coomerce_Website_HTML/Account.html">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+
+                <a href="../E-Coomerce_Website_HTML/CartDetails.html">
+                    <img src="../E-Coomerce_Website_Images/cart.png" class="cart_img" width="30px" height="30px">
+                </a>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+        </div>
+
+<!--------------------------------------------Login/Register Form Page------------------------------------->
+
+<div class="AccountPage">
+    <div class="row">
+        <div class="col-2">
+            <img src="../E-Coomerce_Website_Images/image1.png" width="80%">
+        </div>
+        <div class="col-2">
+             <div class="FormContainer">
+                <div class="FormBtn">
+                    <span onclick="Login();">Login</span>
+                    <span onclick="Register();">Register</span>
+                    <hr id="Indicator">
+                </div>
+
+                <form action="" id="LoginForm">
+                    <input type="text" placeholder="Enter Your Username">
+                    <input type="password" placeholder="Enter Your Password">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="">Forgot password</a>
+                </form>
+                <form action="" id="RegisterForm">
+                    <input type="text" placeholder="Enter Your Username">
+                    <input type="email" placeholder="Enter Your Email">
+                    <input type="password" placeholder="Enter Your Password">
+                    <button type="submit" class="btn">Register</button>
+                     
+                </form>
+             </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------Script for the Login/Register Form ------------------------------------->
+
+
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegisterForm = document.getElementById("RegisterForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function Login(){
+        LoginForm.style.transform = "translateX(300px)";
+        RegisterForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+    function Register(){
+        LoginForm.style.transform = "translateX(0px)";
+        RegisterForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+</script>
+    <!-- ------------------------Script for the functionality of the menu--------------------------------->
+    <script>
+        var nav_links = document.getElementById("nav_links");
+        function hideMenu(){
+            nav_links.style.right="-200px";
+        }
+        function showMenu(){
+            nav_links.style.right="0";
+        }
+    </script>
+
+<!-----------------------------------------------Footer Section------------------------------------------------->
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for the Andriod and Ios Mobile Phone.</p>
+                <div class="app_logo">
+                    <img src="../E-Coomerce_Website_Images/play-store.png" alt="">
+                    <img src="../E-Coomerce_Website_Images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                 <img src="../E-Coomerce_Website_Images/logo-white.png" alt="">
+                <p>our purpuse is to sustainibly make the pleasure and benifits of sports accessible to the many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="">Coupons </a></li>
+                    <li> <a href="">Blog Post </a></li>
+                    <li> <a href="">Return Policy</a></li>
+                    <li><a href="">Join Affiliate </a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us on Socail Medai</h3>
+                <div class="social_Medai_Icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>copyright &copy;2022 | All right reserved By kashifkhan4unoor</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

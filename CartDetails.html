@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../E-Coomerce_Website_CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,200;1,400;1,500&display=swap" rel="stylesheet">
+
+    <title>All Products eCommerce Website | Kashif Khan</title>
+</head>
+<body>
+    <div class="container">
+            <div class="Nav_bar">
+                <div class="logo_img">
+                    <a href="../E-Coomerce_Website_HTML/index.html"> 
+                        <img src="../E-Coomerce_Website_Images/logo.png"  width="140px" alt="">
+                    </a>
+                </div>
+                <nav id="nav_links">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../E-Coomerce_Website_HTML/index.html">HOME</a></li>
+                        <li><a href="../E-Coomerce_Website_HTML/Products.html">PRODUCTS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="../E-Coomerce_Website_HTML/Contact.html">CONTACT</a></li>
+                        <li><a href="../E-Coomerce_Website_HTML/Account.html">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+
+                <a href="../E-Coomerce_Website_HTML/CartDetails.html">
+                    <img src="../E-Coomerce_Website_Images/cart.png" class="cart_img" width="30px" height="30px">
+                </a>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+        </div>
+
+
+
+
+    <!-- ------------------------Script for the functionality of the menu--------------------------------->
+    <script>
+        var nav_links = document.getElementById("nav_links");
+        function hideMenu(){
+            nav_links.style.right="-200px";
+        }
+        function showMenu(){
+            nav_links.style.right="0";
+        }
+    </script>
+
+
+<div class="small_container cart_page">
+    <table>
+        <tr>
+            <th>Products</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart_info">
+                    <img src="../E-Coomerce_Website_Images/buy-1.jpg" alt="">
+
+                    <div>
+                        <p>Red Printed T-Shirt</p>
+                        <small>Price: $100.00</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <input type="number" name="" id="" value="1">
+            </td>
+            <td>
+                $75.00
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart_info">
+                    <img src="../E-Coomerce_Website_Images/buy-2.jpg" alt="">
+
+                    <div>
+                        <p>Black Colour Shoes</p>
+                        <small>Price: $70.00</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <input type="number" name="" id="" value="1">
+            </td>
+            <td>
+                $70.00
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart_info">
+                    <img src="../E-Coomerce_Website_Images/buy-3.jpg" alt="">
+
+                    <div>
+                        <p>Black & White T-Shirt</p>
+                        <small>Price: $80.00</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <input type="number" name="" id="" value="1">
+            </td>
+            <td>
+                $80.00
+            </td>
+        </tr>
+    </table>
+
+    <div class="TotaPrice">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$200.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$20.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$300.00</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-----------------------------------------------Footer Section------------------------------------------------->
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for the Andriod and Ios Mobile Phone.</p>
+                <div class="app_logo">
+                    <img src="../E-Coomerce_Website_Images/play-store.png" alt="">
+                    <img src="../E-Coomerce_Website_Images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                 <img src="../E-Coomerce_Website_Images/logo-white.png" alt="">
+                <p>our purpuse is to sustainibly make the pleasure and benifits of sports accessible to the many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="">Coupons </a></li>
+                    <li> <a href="">Blog Post </a></li>
+                    <li> <a href="">Return Policy</a></li>
+                    <li><a href="">Join Affiliate </a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us on Socail Medai</h3>
+                <div class="social_Medai_Icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>copyright &copy;2022 | All right reserved By kashifkhan4unoor</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.Nav_bar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+   
+}
+.col-2 img{
+    max-width: 100%;    
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0px;
+}
+.btn{
+    background-color: #FF523B;
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin: 30px 0px;
+    transition: background 0.5s;
+}
+.col-2 a{
+    text-decoration: none;
+}
+.header{
+    background:radial-gradient(#fff,#FFD6D6);
+}
+
+.btn:hover{
+    background-color: #563434;
+}
+
+/*---------------------------------------Feature Catagories-------------------------------------------*/
+
+.feature_catagories{
+    margin: 70px 0px ;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+   width: 100%;
+}
+.small_container{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0px 25px;
+}
+
+/*------------------------------------Feature Products and Latest Products-----------------------------*/
+
+.col-4{
+    flex-basis: 25%;
+    min-width: 200px;
+    margin-bottom: 50px;
+    padding: 10px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0px auto 50px;
+    line-height: 60px;
+    position: relative;
+    color: #555;
+}
+.title::after{
+    content: "";
+    background-color: #FF523B;
+    height: 5px;
+    border-radius: 5px;
+    width: 80px;
+    display: block;
+    bottom: 5px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .fa{
+    color: #FF523B;
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+
+/*-----------------------------------------Exclusive Offers-----------------------------------------*/
+
+.offer{
+    background:radial-gradient(#fff,#FFD6D6);
+    margin-top: 80px;
+    padding: 10px 0px; 
+}
+.col-2 .offer_Images{
+    width: 400px;
+}
+small{
+    color: #555;
+}
+
+/*-----------------------------------------Testimonial---------------------------------------------*/
+
+.testimonial{
+    margin-top: 80px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 25px;
+    transition: transform 0.5s;
+}
+.testimonial p{
+    font-size: 14px;
+    color: #777;
+}
+.testimonial img{
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.testimonial h3{
+    font-weight: 600;
+    font-size: 16px;
+    color: #555;
+}
+.testimonial .fa-quote-left{
+    color: #FF523B;
+    font-size: 34px;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+
+/*------------------------------------------Brand Section-------------------------------------------*/
+
+.brand{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img{
+    width: 100%;
+}
+.col-5:hover{
+    filter: grayscale(0%);
+}
+
+/*------------------------------------------------Footer Section-----------------------------------------*/
+
+.footer{
+    background-color:#000;
+    color: #8a8a8a;
+    font-size: 16px;
+    padding: 60px 0px 20px;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+}
+.app_logo{
+    margin-top:20px;
+}
+.app_logo img{
+    width: 140px;
+    cursor: pointer;
+}
+.footer-col-3 ul{
+    list-style-type: none;
+}
+.footer-col-3 ul li a{
+    text-decoration: none;
+    color: #8a8a8a;
+    transition: all 0.5s;
+}
+.footer-col-3 ul li a:hover{
+    padding-left: 10px;
+    color: chocolate;
+}
+.social_Medai_Icon{
+    display: inline-block;
+    padding: 0px 10px;
+    
+}
+.social_Medai_Icon i{
+    font-size: 22px;
+    border: 1px solid #FFD6D6;
+    margin: 0px 5px ;
+    padding: 5px;
+    border-radius: 50%;
+}
+.social_Medai_Icon .fa-facebook:hover{
+    background-color: #fff;
+    color: #4267B2;
+}
+.social_Medai_Icon .fa-instagram:hover{
+    background-color: #fff;
+    color: #3f729b;
+}
+.social_Medai_Icon .fa-twitter:hover{
+    background-color: #fff;
+    color: 	#1DA1F2;
+}
+.social_Medai_Icon .fa-youtube-play:hover{
+    background-color: #fff;
+    color: #FF0000;
+}
+.footer hr{
+    font-weight: 100;
+    height: 3px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav .fa-window-close{
+    font-size: 25px ;
+    color: black;
+    margin-right: 20px;
+}
+.Nav_bar .fa-bars{
+    font-size: 25px ;
+    color: black;
+    margin-left: 20px;
+}
+nav .fa-window-close, .Nav_bar .fa-bars{
+    display: none;
+}
+
+@media(max-width:800px){
+    nav ul{
+        display: block;
+        padding: 20px;
+        margin: 20px auto;
+    }
+    nav ul li a{
+        color: white;
+        
+    }
+    nav ul li{
+        margin: 15px 10px;
+    }
+    Nav{
+        background-color: #1DA1F2;
+        height: 100vh;
+        width: 200px;
+        position: absolute;
+        top: 0%;
+        right: -200px;
+        z-index: 2;
+        text-align: left;
+        transition: ease-in-out 0.6s;
+    }
+    nav .fa-window-close{
+        display: block;
+        color: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .Nav_bar .fa-bars{
+        display: block;
+        color: rgb(19, 18, 18);
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .Nav_bar .cart_img{
+        margin: 0px 30px 10px;
+    }
+    .col-2 h1{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .col-2,.col-3,.col-4{
+        flex-basis: 100%;
+    }
+}
+
+/*-------------------------------------Product Page---------------------------------------------*/
+.Product_row{
+    justify-content: space-between;
+    margin: 100px  auto 50px;
+}
+select{
+    border: 1px solid #FF523B;
+    padding: 5px ;
+}
+select:focus{
+    outline: none;
+}
+
+.page_btn{
+    margin: 0px auto 80px;
+}
+.page_btn span{
+    display: inline-block;
+    border: 1px solid #FF523B;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 50px;
+}
+.page_btn span:hover{
+    background-color: #FF523B;
+    color: white;
+}
+
+/*-----------------------------------Single Product Details-----------------------------------------*/
+
+.SingleProductDetails{
+    margin-top: 100px;
+}
+.SingleProductDetails .col-2{
+    padding: 50px 20px;
+}
+.SingleProductDetails img{
+    padding: 0px;
+}
+.SingleProductDetails h4{
+    margin: 20px 0px;
+    font-size: 22px;
+}
+.SingleProductDetails p{
+    margin-bottom: 20px;
+}
+.SingleProductDetails select{
+    display: block;
+    margin-bottom: 20px;
+}
+.SingleProductDetails input{
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 10px;
+    border: 1px solid #FF523B;
+}
+input:focus{
+    outline: none;
+}
+.SingleProductDetails .fa-indent{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #FF523B;
+}
+.SmallImageRow{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.SmallImageCol{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+/*-------------------------------------------Cart Details Page------------------------------------------*/
+
+.cart_page{
+    margin: 100px auto 80px;
+}
+.cart_page table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart_info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    color: #fff;
+    background-color: #FF523B;
+    text-align: left;
+    padding: 5px;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+.cart_info img{
+    width: 80px;
+    height: 80px;
+    padding: 0px 5px;
+}
+.cart_info a{
+    text-decoration: none;
+    color: #FF523B;
+}
+td input{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+.TotaPrice{
+    display: flex;
+    justify-content: flex-end;
+}
+.TotaPrice table{
+    width: 100%;
+    max-width: 385px;
+    border-top: 3px solid #FF523B;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+/* ----------------------------------------Account-Page-------------------------------------------- */
+
+.AccountPage{
+    padding: 50px 0px;
+    background:radial-gradient(#fff,#FFD6D6);
+}
+ 
+.FormContainer{
+    /* background-color: #fff; */
+    /* background: radial-gradient(); */
+    background-color: #fff;
+    width: 300px;
+    height: 370px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0px;
+    margin: auto;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.FormContainer span{
+    font-weight: bold;
+    padding: 0px 20px;
+    color: #555;
+    cursor: pointer;
+    width: 100%;
+}
+.FormBtn{
+    display: inline-block;
+}
+.FormContainer form{
+    max-width: 300px;
+    padding: 0px 20px;
+    position: absolute;
+    top: 100px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 35px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    border-radius: 15px;
+    border: none;
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+  
+    
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegisterForm{
+    left: 0px;
+}
+form a{
+    font-size: 14px;
+}
+#Indicator{
+    width: 80px;
+    background: #FF523B;
+    height: 3px;
+    border: none;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+/* ----------------------------------------Contact -Page------------------------------------- */
+
+.location{
+    width: 100%;
+}
+.location iframe{
+    width: 80%;
+    padding-left: 20%;
+    box-sizing: border-box;
+    padding-bottom: 10%;
+}
+.location .fa-location-dot{
+    color: rgb(10, 181, 248);
+    font-size: 100px;
+    padding-top:8%;
+}
+.contact{
+    width: 80%;
+    margin:50px 0px;
+}
+.contact_row{
+    display: flex;
+    justify-content: space-between;
+}
+.contact_cols{
+    flex-basis: 44%;
+    margin: 30px 10%;
+}
+.contact_cols div{
+    padding: 10px 0px;
+    margin: 10px 0px;
+    display: flex;
+    /* margin-left: 20px; */
+    justify-content:left;
+
+}
+.contact_cols .fa{
+    font-size: 25px;
+    color: lightseagreen;
+}
+.contact_cols span{
+    margin-left: 20px;
+}
+/*---------------------------------------------Contact Icon--------------------------------------- */
+.contact_icon{
+    width: 100%;
+    margin-top: 35px;
+}
+.icon {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.icon .fa-twitter:hover{
+    color:#1DA1F2;
+}
+.icon .fa-facebook-square:hover{
+    color: #4267B2;
+}
+.icon .fa-instagram:hover{
+    color:#833AB4;
+}
+.icon .fa-telegram:hover{
+    color: #229ED9;
+}
+.icon .fa-square-whatsapp:hover{
+    color:#25d366 ;
+}
+.icon .fa-youtube-play:hover{
+    color: #FF0000;
+}
+.icon .fa-envelope:hover{
+    color: #f77575b0;
+}
+.icon .fa-comment-sms:hover{
+    color: rgb(30, 207, 30);
+}
+.icon a{
+    text-decoration: none;
+    color: peru;
+}

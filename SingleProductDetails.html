@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../E-Coomerce_Website_CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,200;1,400;1,500&display=swap" rel="stylesheet">
+
+    <title>All Products eCommerce Website | Kashif Khan</title>
+</head>
+<body>
+    <div class="container">
+            <div class="Nav_bar">
+                <div class="logo_img">
+                    <a href="../E-Coomerce_Website_HTML/index.html"> 
+                        <img src="../E-Coomerce_Website_Images/logo.png"  width="140px" alt="">
+                    </a>
+                </div>
+                <nav id="nav_links">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../E-Coomerce_Website_HTML/index.html">HOME</a></li>
+                        <li><a href="../E-Coomerce_Website_HTML/Products.html">PRODUCTS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="../E-Coomerce_Website_HTML/Contact.html">CONTACT</a></li>
+                        <li><a href="../E-Coomerce_Website_HTML/Account.html">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+
+                <a href="../E-Coomerce_Website_HTML/CartDetails.html">
+                    <img src="../E-Coomerce_Website_Images/cart.png" class="cart_img" width="30px" height="30px">
+                </a>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+        </div>
+
+
+
+
+    <!-- ------------------------Script for the functionality of the menu--------------------------------->
+    <script>
+        var nav_links = document.getElementById("nav_links");
+        function hideMenu(){
+            nav_links.style.right="-200px";
+        }
+        function showMenu(){
+            nav_links.style.right="0";
+        }
+    </script>
+
+
+
+
+<!-- -------------------------------------------Single Product Details------------------------------------------>
+
+
+    <div class="small_container SingleProductDetails">
+        <div class="row ProductGalleryRow">
+            <div class="col-2 ProductGalleryCol">
+                <img src="../E-Coomerce_Website_Images/gallery-1.jpg" width="100%" id="BigImage">
+
+                    <div class="SmallImageRow">
+                        <div class="SmallImageCol">
+                            <img src="../E-Coomerce_Website_Images/gallery-1.jpg" width="100%" class="SmallImage">
+                        </div>
+                        <div class="SmallImageCol">
+                            <img src="../E-Coomerce_Website_Images/gallery-2.jpg" width="100%" class="SmallImage">
+                        </div>
+                        <div class="SmallImageCol">
+                            <img src="../E-Coomerce_Website_Images/gallery-3.jpg" width="100%" class="SmallImage">
+                        </div>
+                        <div class="SmallImageCol">
+                            <img src="../E-Coomerce_Website_Images/gallery-4.jpg" width="100%" class="SmallImage">
+                        </div>
+                    </div>
+                </div>
+            <div class="col-2 ProductGalleryCol">
+                <p>Home / T-Shirt</p>
+                <h2>Red Printed T-Shirt By HRX</h2>
+                <h4>$50.00</h4>
+                <select name="" id="">
+                    <option value="">Select Size</option>
+                    <option value="">XXL</option>
+                    <option value="">XL</option>
+                    <option value="">Large</option>
+                    <option value="">Medium</option>
+                    <option value="">Small</option>
+                </select>
+                <input type="number" name="" id="" value="1"> <br>
+                <a href="../E-Coomerce_Website_HTML/CartDetails.html" class="btn">Add to Cart</a> <br>
+                <h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+                <p>Give your summer wardrobe style upgrade with HRX Men's active T-Shirt. Team it with 
+                    a pairs of shirts for your morning workout or a denims for an evening out with guys.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------Script for the Images Clicking------------------------------ -->
+
+    <script>
+        var BigImage = document.getElementById("BigImage");
+        var SmallImage = document.getElementsByClassName("SmallImage");
+    
+        SmallImage[0].onclick= function(){
+            BigImage.src = SmallImage[0].src;
+        }
+        SmallImage[1].onclick= function(){
+            BigImage.src = SmallImage[1].src;
+        }
+        SmallImage[2].onclick= function(){
+            BigImage.src = SmallImage[2].src;
+        }
+        SmallImage[3].onclick= function(){
+            BigImage.src = SmallImage[3].src;
+        }
+    </script>
+
+<div class="small_container">
+    <div class="row Product_row">
+        <h2>Related Products </h2>
+        <p>View More</p>
+    </div>
+    <div class="row">
+        <div class="col-4">
+           <img src="../E-Coomerce_Website_Images/product-9.jpg" alt=""> 
+           <h4>Red Printed T-Shirt</h4>
+           <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           </div>
+           <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="../E-Coomerce_Website_Images/product-10.jpg" alt=""> 
+            <h4>Black Shoes</h4>
+            <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half-o"></i>
+             <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="../E-Coomerce_Website_Images/product-11.jpg" alt=""> 
+            <h4>Black Printed Jeans</h4>
+            <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="../E-Coomerce_Website_Images/product-12.jpg" alt=""> 
+            <h4>Dark Blue Printed T-Shirt</h4>
+            <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+    </div>
+
+     
+</div>
+
+<!-----------------------------------------------Footer Section------------------------------------------------->
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for the Andriod and Ios Mobile Phone.</p>
+                <div class="app_logo">
+                    <img src="../E-Coomerce_Website_Images/play-store.png" alt="">
+                    <img src="../E-Coomerce_Website_Images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                 <img src="../E-Coomerce_Website_Images/logo-white.png" alt="">
+                <p>our purpuse is to sustainibly make the pleasure and benifits of sports accessible to the many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="">Coupons </a></li>
+                    <li> <a href="">Blog Post </a></li>
+                    <li> <a href="">Return Policy</a></li>
+                    <li><a href="">Join Affiliate </a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us on Socail Medai</h3>
+                <div class="social_Medai_Icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>copyright &copy;2022 | All right reserved By kashifkhan4unoor</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
